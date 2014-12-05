@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">59aa48ee-cc1b-462d-b666-0fdc4c90ff90</identifier>
+  </ID>
+  <name>OG_STADIUM</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">7ed05619-7448-4e61-a5f7-67210743ea8d</identifier>
+      </ID>
+      <name>OG_STADIUM_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">0b11661f-cb8f-4a77-b84a-f4bb52c01a2f</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_STADIUM_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">2677bf2f-3aa4-459c-b5b0-7ee10f8462c8</identifier>
+      </ID>
+      <name>NAME</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">8f9b7cd5-a9f1-41f1-ab7c-ce2dafa3d769</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column NAME created from UML attribute &quot;name&quot; in UML class &quot;OgStadium&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">68cc85cd-2749-49ce-a343-07d23d904904</identifier>
+      </ID>
+      <name>CAPACITY</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">dc9fe2c8-f173-403b-b94e-efd10d23d3f0</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column CAPACITY created from UML attribute &quot;capacity&quot; in UML class &quot;OgStadium&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">57d9e2fb-7387-4b65-8292-9d7be918fa60</identifier>
+      </ID>
+      <name>OG_STADIUM_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_STADIUM_ID</name>
+          <identifier class="java.lang.String">7ed05619-7448-4e61-a5f7-67210743ea8d</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_STADIUM</name>
+            <identifier class="java.lang.String">59aa48ee-cc1b-462d-b666-0fdc4c90ff90</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SYSMAN</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_STADIUM_PK</name>
+        <identifier class="java.lang.String">107225f2-e582-4d72-a564-daccc14977da</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_STADIUM</name>
+          <identifier class="java.lang.String">59aa48ee-cc1b-462d-b666-0fdc4c90ff90</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">107225f2-e582-4d72-a564-daccc14977da</identifier>
+      </ID>
+      <name>OG_STADIUM_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">5c55ec64-c94a-422e-a6b8-2e98573078b9</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">9a2eff59-8654-43e9-a4b5-c2a2c8488f26</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_STADIUM_ID</name>
+              <identifier class="java.lang.String">7ed05619-7448-4e61-a5f7-67210743ea8d</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_STADIUM</name>
+                <identifier class="java.lang.String">59aa48ee-cc1b-462d-b666-0fdc4c90ff90</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>SYSMAN</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table OG_STADIUM created from UML class &quot;OgStadium&quot;
+Primary key constraint OG_STADIUM_PK created by default</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SYSMAN</name>
+  </schema>
+</table>

@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">38ee1e7e-d461-45fd-8779-0bcf42310dcc</identifier>
+  </ID>
+  <name>OG_NOC</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">3f99c1f1-abc8-4d85-90dc-f3296fc24f1f</identifier>
+      </ID>
+      <name>OG_NOC_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">49700b33-0988-44ef-97ea-bb7477eae434</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_NOC_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">f7e92a03-cca1-4fd3-93ed-3b1f7ea355b1</identifier>
+      </ID>
+      <name>NOC</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">c14819fc-b61d-4d2c-b25f-c9e5f82f884e</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column NOC created from UML attribute &quot;noc&quot; in UML class &quot;OgNoc&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">b5443e21-71a5-4c97-99fa-2c69961111a4</identifier>
+      </ID>
+      <name>OG_NOC_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NOC_ID</name>
+          <identifier class="java.lang.String">3f99c1f1-abc8-4d85-90dc-f3296fc24f1f</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_NOC</name>
+            <identifier class="java.lang.String">38ee1e7e-d461-45fd-8779-0bcf42310dcc</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SYSMAN</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_NOC_PK</name>
+        <identifier class="java.lang.String">df3b83e5-d4f9-4148-9b32-4a863be07ce0</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NOC</name>
+          <identifier class="java.lang.String">38ee1e7e-d461-45fd-8779-0bcf42310dcc</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">df3b83e5-d4f9-4148-9b32-4a863be07ce0</identifier>
+      </ID>
+      <name>OG_NOC_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">27fe259f-864c-4976-8b44-00736b335f93</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">7dc2f892-aea5-4454-8277-c98f6ed7169a</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_NOC_ID</name>
+              <identifier class="java.lang.String">3f99c1f1-abc8-4d85-90dc-f3296fc24f1f</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_NOC</name>
+                <identifier class="java.lang.String">38ee1e7e-d461-45fd-8779-0bcf42310dcc</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>SYSMAN</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table OG_NOC created from UML class &quot;OgNoc&quot;
+Primary key constraint OG_NOC_PK created by default</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SYSMAN</name>
+  </schema>
+</table>

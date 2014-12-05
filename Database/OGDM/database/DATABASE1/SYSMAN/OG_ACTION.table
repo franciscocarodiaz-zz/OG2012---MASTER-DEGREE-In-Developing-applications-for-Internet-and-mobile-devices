@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">d6913ed2-d2ce-456d-9036-038389bb06c5</identifier>
+  </ID>
+  <name>OG_ACTION</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">bd965beb-2b29-40cb-afe0-7f384cfe2b38</identifier>
+      </ID>
+      <name>OG_ACTION_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">3b9b6ada-a503-4c6e-a943-e46c8025d748</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_ACTION_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">57b131b7-9ed1-4284-a250-41637b1baba9</identifier>
+      </ID>
+      <name>ACTION</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">8640389d-5ec8-4407-b317-d1e9e1e7371e</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column ACTION created from UML attribute &quot;action&quot; in UML class &quot;OgAction&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">59917667-3b71-4f24-a193-c4f66cbed759</identifier>
+      </ID>
+      <name>OG_ACTION_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_ACTION_ID</name>
+          <identifier class="java.lang.String">bd965beb-2b29-40cb-afe0-7f384cfe2b38</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_ACTION</name>
+            <identifier class="java.lang.String">d6913ed2-d2ce-456d-9036-038389bb06c5</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SYSMAN</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_ACTION_PK</name>
+        <identifier class="java.lang.String">bf2be0d7-1296-4d4e-b642-91dbfd991c62</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_ACTION</name>
+          <identifier class="java.lang.String">d6913ed2-d2ce-456d-9036-038389bb06c5</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">bf2be0d7-1296-4d4e-b642-91dbfd991c62</identifier>
+      </ID>
+      <name>OG_ACTION_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">e28057cc-e700-40e8-8473-b4c22cb0b9f5</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">073845f3-a8dd-4b63-95c4-8a52f8a51c84</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_ACTION_ID</name>
+              <identifier class="java.lang.String">bd965beb-2b29-40cb-afe0-7f384cfe2b38</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_ACTION</name>
+                <identifier class="java.lang.String">d6913ed2-d2ce-456d-9036-038389bb06c5</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>SYSMAN</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table OG_ACTION created from UML class &quot;OgAction&quot;
+Primary key constraint OG_ACTION_PK created by default</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SYSMAN</name>
+  </schema>
+</table>

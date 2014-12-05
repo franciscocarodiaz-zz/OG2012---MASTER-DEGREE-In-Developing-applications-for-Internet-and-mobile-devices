@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">849d0e26-e09d-48a6-88bf-c4dc19e2ad01</identifier>
+  </ID>
+  <name>OG_CATEGORY</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">3ef08787-f293-413b-b2af-7fa491c85946</identifier>
+      </ID>
+      <name>OG_CATEGORY_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">215fe1e1-721e-4dfe-9eeb-b1c3f33eb9e2</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_CATEGORY_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e986027a-2fac-4b74-858e-04cc0b827479</identifier>
+      </ID>
+      <name>CATEGORY</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">7333ad79-bc63-4d44-9f33-dc9adb9ef37e</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column CATEGORY created from UML attribute &quot;category&quot; in UML class &quot;OgCategory&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">ce3dc8eb-6381-4e55-9b97-fcb16970f40c</identifier>
+      </ID>
+      <name>OG_CATEGORY_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_CATEGORY_ID</name>
+          <identifier class="java.lang.String">3ef08787-f293-413b-b2af-7fa491c85946</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_CATEGORY</name>
+            <identifier class="java.lang.String">849d0e26-e09d-48a6-88bf-c4dc19e2ad01</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SYSMAN</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_CATEGORY_PK</name>
+        <identifier class="java.lang.String">41d4bc0e-ead1-419f-b05b-119fd21bd5e1</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_CATEGORY</name>
+          <identifier class="java.lang.String">849d0e26-e09d-48a6-88bf-c4dc19e2ad01</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">41d4bc0e-ead1-419f-b05b-119fd21bd5e1</identifier>
+      </ID>
+      <name>OG_CATEGORY_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">5ab61835-a42f-4544-8c89-a6b3517b0db1</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">ec23f4e9-9fe9-4ade-ba25-5a6ae06b0488</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_CATEGORY_ID</name>
+              <identifier class="java.lang.String">3ef08787-f293-413b-b2af-7fa491c85946</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_CATEGORY</name>
+                <identifier class="java.lang.String">849d0e26-e09d-48a6-88bf-c4dc19e2ad01</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>SYSMAN</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table OG_CATEGORY created from UML class &quot;OgCategory&quot;
+Primary key constraint OG_CATEGORY_PK created by default</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SYSMAN</name>
+  </schema>
+</table>

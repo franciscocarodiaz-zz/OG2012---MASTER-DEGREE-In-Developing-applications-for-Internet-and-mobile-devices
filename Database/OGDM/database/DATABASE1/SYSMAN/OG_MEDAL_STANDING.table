@@ -1,0 +1,357 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">9b33f599-c54f-48d9-a1f5-e4ccf9495a7c</identifier>
+  </ID>
+  <name>OG_MEDAL_STANDING</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">0c2e31eb-d0d6-4f21-9d94-abf48b3bb861</identifier>
+      </ID>
+      <name>OG_MEDAL_STANDING_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">71b746dd-257f-4c9d-9ae0-795a7c4c5269</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_MEDAL_STANDING_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">2ab5471f-f61c-47cd-bba6-447a4bfae130</identifier>
+      </ID>
+      <name>ID_NATIONALITY</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">304ce73f-6dfa-4272-a98d-ed7280453457</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column ID_NATIONALITY created from UML attribute &quot;idNationality&quot; in UML class &quot;OgMedalStanding&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">3beddab9-678b-462b-b699-36457cae9e80</identifier>
+      </ID>
+      <name>GOLD</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">12fe08e2-e48d-4660-ab7d-021de0374297</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column GOLD created from UML attribute &quot;gold&quot; in UML class &quot;OgMedalStanding&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">c0b43e7f-4096-4411-9d29-38d6a070c201</identifier>
+      </ID>
+      <name>SILVER</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">c38788d7-3a12-4d95-80d2-e639d7b623c3</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column SILVER created from UML attribute &quot;silver&quot; in UML class &quot;OgMedalStanding&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">2f0bfb79-1dae-47ca-b39c-48c25a84fd48</identifier>
+      </ID>
+      <name>BRONZE</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">45dce5df-84b6-4480-8322-201f4e29b703</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column BRONZE created from UML attribute &quot;bronze&quot; in UML class &quot;OgMedalStanding&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">c840090c-362a-4c51-ae84-a40878a81596</identifier>
+      </ID>
+      <name>OG_NATIONALITY_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">71336f24-9ac4-4e33-ad68-bd1fbbd6baa9</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_NATIONALITY_ID created as default foreign key column for foreign key &quot;OG_MEDAL_STANDING_NATIONALITY&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">f8e7805b-02bd-4063-be06-d86be9cfca79</identifier>
+      </ID>
+      <name>OG_MEDAL_STANDING_NATIONALITY</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NATIONALITY_ID</name>
+          <identifier class="java.lang.String">c840090c-362a-4c51-ae84-a40878a81596</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_MEDAL_STANDING</name>
+            <identifier class="java.lang.String">9b33f599-c54f-48d9-a1f5-e4ccf9495a7c</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_NATIONALITY_PK</name>
+        <identifier class="java.lang.String">710bd89b-a890-4b13-b3c8-c63988bd216b</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NATIONALITY</name>
+          <identifier class="java.lang.String">cba66f59-ffb4-4ab8-9d99-14b134c412a0</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">5cc26602-b8da-4e18-a190-d5bbfd9cd493</identifier>
+      </ID>
+      <name>OG_MEDAL_STANDING_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_MEDAL_STANDING_ID</name>
+          <identifier class="java.lang.String">0c2e31eb-d0d6-4f21-9d94-abf48b3bb861</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_MEDAL_STANDING</name>
+            <identifier class="java.lang.String">9b33f599-c54f-48d9-a1f5-e4ccf9495a7c</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_MEDAL_STANDING_PK</name>
+        <identifier class="java.lang.String">8edb3e45-6171-4204-afed-f9e33fd641bb</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_MEDAL_STANDING</name>
+          <identifier class="java.lang.String">9b33f599-c54f-48d9-a1f5-e4ccf9495a7c</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+    <constraint class="oracle.javatools.db.UniqueConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">04cc9869-57d4-4d68-9a6b-257a1d2dd346</identifier>
+      </ID>
+      <name>OG_MEDAL_STANDING_UK_NAT</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NATIONALITY_ID</name>
+          <identifier class="java.lang.String">c840090c-362a-4c51-ae84-a40878a81596</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_MEDAL_STANDING</name>
+            <identifier class="java.lang.String">9b33f599-c54f-48d9-a1f5-e4ccf9495a7c</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_MEDAL_STANDING_UK_NAT</name>
+        <identifier class="java.lang.String">5a8a9f30-6d9f-4533-87da-ee04ebc3da43</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_MEDAL_STANDING</name>
+          <identifier class="java.lang.String">9b33f599-c54f-48d9-a1f5-e4ccf9495a7c</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">8edb3e45-6171-4204-afed-f9e33fd641bb</identifier>
+      </ID>
+      <name>OG_MEDAL_STANDING_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">c3be37c5-6e81-4fa4-98f4-21ced9863cc4</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">2bb48ec0-3ed9-43da-be40-2ed7f2f75fd5</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_MEDAL_STANDING_ID</name>
+              <identifier class="java.lang.String">0c2e31eb-d0d6-4f21-9d94-abf48b3bb861</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_MEDAL_STANDING</name>
+                <identifier class="java.lang.String">9b33f599-c54f-48d9-a1f5-e4ccf9495a7c</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">5a8a9f30-6d9f-4533-87da-ee04ebc3da43</identifier>
+      </ID>
+      <name>OG_MEDAL_STANDING_UK_NAT</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">a4e9a707-97e5-457e-b36e-53ff3a49896f</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">e71e9de1-1aa3-4542-bbe1-f987b061e272</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_NATIONALITY_ID</name>
+              <identifier class="java.lang.String">c840090c-362a-4c51-ae84-a40878a81596</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_MEDAL_STANDING</name>
+                <identifier class="java.lang.String">9b33f599-c54f-48d9-a1f5-e4ccf9495a7c</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table OG_MEDAL_STANDING created from UML class &quot;OgMedalStanding&quot;
+Primary key constraint OG_MEDAL_STANDING_PK created by default
+Foreign key constraint OG_MEDAL_STANDING_NATIONALITY created for UML association &quot;OgMedalStandingNationality&quot;</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SYSMAN</name>
+  </schema>
+</table>

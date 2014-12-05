@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TransferDescriptor xmlns="http://xmlns.oracle.com/jdeveloper/110000transfer-descriptor">
+   <value n="cascadeDelete" v="false"/>
+   <value n="dependencyDepth" v="0"/>
+   <value n="downgradeOK" v="true"/>
+   <value n="includeAllDependencies" v="false"/>
+   <value n="includeDependencies" v="false"/>
+   <value n="manualReconcile" v="false"/>
+   <value n="policy" v="oracle.ideimpl.db.transfer.OnToOnPolicy"/>
+   <value n="reconcile" v="false"/>
+   <value n="replace" v="false"/>
+   <value n="schemaNames" v="false"/>
+   <list n="schemaObjectDescriptors">
+      <hash>
+         <value n="name" v="OG_GENDER"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_PARTICIPANT"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_CATEGORY"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_STATISTIC_TEAM"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_ACTION"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_NEW"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_MEDAL"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_PERSON"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_STADIUM"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_NATIONALITY"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_NEW_NOC"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_STAT_MATCH_PARTIC"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_MATCH"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_RESULT"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_REFEREE"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_STATISTIC_PARTICIPANT"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_TEAM_ACTION"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_TEAM_PARTIC"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_CATEGORY_REFEREE"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_MEDAL_STANDING"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_GROUP"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_TEAM"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_PHASE"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_NOC"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_COLOUR"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_STATUS"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+      <hash>
+         <value n="name" v="OG_ROLE"/>
+         <value n="schemaName" v="SYSMAN"/>
+         <value n="type" v="TABLE"/>
+      </hash>
+   </list>
+   <value n="sourceIdentifier" v="IdeConnections%23OGDB"/>
+   <value n="sourceProviderType" v="db"/>
+   <value n="spoolCommands" v="false"/>
+   <url n="sqlFile" path="CREATE_TABLES.sql"/>
+   <value n="sqlPlus" v="false"/>
+   <hash n="targets">
+      <hash n="oracle.ideimpl.db.transfer.DDLTransferTarget"/>
+   </hash>
+</TransferDescriptor>

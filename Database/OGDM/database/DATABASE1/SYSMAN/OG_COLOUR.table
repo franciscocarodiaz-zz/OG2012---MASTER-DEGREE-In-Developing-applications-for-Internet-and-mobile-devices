@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">448ff8d1-df6b-4c56-a80b-530e3a8a8c6f</identifier>
+  </ID>
+  <name>OG_COLOUR</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">27eef87e-d346-4b7f-aad3-a7e679fc27d9</identifier>
+      </ID>
+      <name>OG_COLOUR_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">dae48949-bf6d-4b02-b535-6b1b52cf15d7</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_COLOUR_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">6ace859b-c430-424a-a985-ce4ccec739f0</identifier>
+      </ID>
+      <name>COLOUR</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">c8328b8c-a197-4969-b57c-a832ee8dfb86</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column COLOUR created from UML attribute &quot;colour&quot; in UML class &quot;OgColour&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">5af64505-9afa-4c1c-9f0f-b93ac55553f5</identifier>
+      </ID>
+      <name>OG_COLOUR_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_COLOUR_ID</name>
+          <identifier class="java.lang.String">27eef87e-d346-4b7f-aad3-a7e679fc27d9</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_COLOUR</name>
+            <identifier class="java.lang.String">448ff8d1-df6b-4c56-a80b-530e3a8a8c6f</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SYSMAN</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_COLOUR_PK</name>
+        <identifier class="java.lang.String">48912592-f8b5-4bb2-a67b-a48549f5bc48</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_COLOUR</name>
+          <identifier class="java.lang.String">448ff8d1-df6b-4c56-a80b-530e3a8a8c6f</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">48912592-f8b5-4bb2-a67b-a48549f5bc48</identifier>
+      </ID>
+      <name>OG_COLOUR_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">224d0df8-7156-43c0-babe-0b131d8ee654</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">039dd00d-0262-42be-bc0e-82a3ad56f889</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_COLOUR_ID</name>
+              <identifier class="java.lang.String">27eef87e-d346-4b7f-aad3-a7e679fc27d9</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_COLOUR</name>
+                <identifier class="java.lang.String">448ff8d1-df6b-4c56-a80b-530e3a8a8c6f</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>SYSMAN</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table OG_COLOUR created from UML class &quot;OgColour&quot;
+Primary key constraint OG_COLOUR_PK created by default</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SYSMAN</name>
+  </schema>
+</table>

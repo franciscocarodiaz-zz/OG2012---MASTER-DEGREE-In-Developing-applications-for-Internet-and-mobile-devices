@@ -1,0 +1,665 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">6a2bf6a9-209b-49f0-ae24-35ff6959253f</identifier>
+  </ID>
+  <name>OG_MATCH</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">74d4ca7c-314a-42d8-a3c3-60605937806b</identifier>
+      </ID>
+      <name>OG_MATCH_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">8818a034-9a7f-4b77-aeb8-16fc1647d479</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_MATCH_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">97cb7599-c314-4f2f-89df-2a1bf7e4d46b</identifier>
+      </ID>
+      <name>STARTDATE</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">bcd113d4-1a62-4ab0-8a1a-2081e5b6839c</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column STARTDATE created from UML attribute &quot;startdate&quot; in UML class &quot;OgMatch&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">fa4d94c9-7dc1-4c38-a630-0b40a47028b0</identifier>
+      </ID>
+      <name>ENDDATE</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">b62a1224-bc11-4fbd-aa94-7e7cbacdb269</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column ENDDATE created from UML attribute &quot;enddate&quot; in UML class &quot;OgMatch&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">45769778-c523-40ab-9b12-4cfbcab94cf0</identifier>
+      </ID>
+      <name>WINNER</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">e81ee3e7-ee5c-462e-aa9a-c6ec017c4606</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column WINNER created from UML attribute &quot;winner&quot; in UML class &quot;OgMatch&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">9d5671be-f590-4b8f-b51c-50db48972c38</identifier>
+      </ID>
+      <name>OG_MEDAL_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">a34c0d41-57cc-471c-b8fe-a2efceb2b3a0</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_MEDAL_ID created as default foreign key column for foreign key &quot;OG_MATCH_MEDAL&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e23c369d-d5fa-4b1f-8d6b-3566e723fb9d</identifier>
+      </ID>
+      <name>OG_PHASE_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">a9dabf0d-9b57-4e6d-a6c8-24542e06f5fb</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_PHASE_ID created as default foreign key column for foreign key &quot;OG_MATCH_PHASE&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">16a3a395-2d71-4778-90fa-c19d4c13603a</identifier>
+      </ID>
+      <name>REFEREE1</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">95cd0d97-b305-4fbf-9528-e5d3bde473ef</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column REFEREE1 created as default foreign key column for foreign key &quot;OG_MATCH_REFEREE&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">3fa56cef-7814-4576-8f04-58ed3534f1a3</identifier>
+      </ID>
+      <name>OG_STADIUM_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">0b11661f-cb8f-4a77-b84a-f4bb52c01a2f</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_STADIUM_ID created as default foreign key column for foreign key &quot;OG_MATCH_STADIUM&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">c1a1a674-a3ef-4a61-8f61-a715672d7e43</identifier>
+      </ID>
+      <name>OG_STATUS_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">60b59a92-159e-481b-b449-8e70d283897d</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_STATUS_ID created as default foreign key column for foreign key &quot;OG_MATCH_STATUS&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">0d937362-97d1-4a60-9745-dece6217a09a</identifier>
+      </ID>
+      <name>OG_TEAM_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">72200111-c2f2-489e-86ef-91922b5738ac</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_TEAM_ID created as default foreign key column for foreign key &quot;OG_MATCH_TEAM1&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">2f885a93-2572-4841-8143-c0515c4baa59</identifier>
+      </ID>
+      <name>OG_TEAM_ID1</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">72200111-c2f2-489e-86ef-91922b5738ac</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_TEAM_ID1 created as default foreign key column for foreign key &quot;OG_MATCH_TEAM2&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">1174eae7-f7cf-4927-b5bc-84a7b17d71b6</identifier>
+      </ID>
+      <name>OG_MATCH_MEDAL</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_MEDAL_ID</name>
+          <identifier class="java.lang.String">9d5671be-f590-4b8f-b51c-50db48972c38</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_MATCH</name>
+            <identifier class="java.lang.String">6a2bf6a9-209b-49f0-ae24-35ff6959253f</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_MEDAL_PK</name>
+        <identifier class="java.lang.String">cd233678-1208-42c2-a2f7-9aea956f288e</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_MEDAL</name>
+          <identifier class="java.lang.String">4be4b57d-bada-4645-a596-46b436796171</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">091e26c6-aabd-4473-807c-b9ebd343edb3</identifier>
+      </ID>
+      <name>OG_MATCH_PHASE</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_PHASE_ID</name>
+          <identifier class="java.lang.String">e23c369d-d5fa-4b1f-8d6b-3566e723fb9d</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_MATCH</name>
+            <identifier class="java.lang.String">6a2bf6a9-209b-49f0-ae24-35ff6959253f</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_PHASE_PK</name>
+        <identifier class="java.lang.String">ebac6aef-1e22-4992-afe4-ec16e2762d90</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_PHASE</name>
+          <identifier class="java.lang.String">ec9835ca-e199-41f7-8e2d-4c5ad0c15554</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">31b9fbb5-6883-49e8-85fe-acd32223a958</identifier>
+      </ID>
+      <name>OG_MATCH_REFEREE</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>REFEREE1</name>
+          <identifier class="java.lang.String">16a3a395-2d71-4778-90fa-c19d4c13603a</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_MATCH</name>
+            <identifier class="java.lang.String">6a2bf6a9-209b-49f0-ae24-35ff6959253f</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_REFEREE_PK</name>
+        <identifier class="java.lang.String">00c0345a-0726-467f-9aee-d9d95b201f81</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_REFEREE</name>
+          <identifier class="java.lang.String">98f2f795-ee2e-4525-9686-7e7446d07b0c</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">b6ac08e2-c299-4c13-b078-575695aa4293</identifier>
+      </ID>
+      <name>OG_MATCH_STADIUM</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_STADIUM_ID</name>
+          <identifier class="java.lang.String">3fa56cef-7814-4576-8f04-58ed3534f1a3</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_MATCH</name>
+            <identifier class="java.lang.String">6a2bf6a9-209b-49f0-ae24-35ff6959253f</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_STADIUM_PK</name>
+        <identifier class="java.lang.String">57d9e2fb-7387-4b65-8292-9d7be918fa60</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_STADIUM</name>
+          <identifier class="java.lang.String">59aa48ee-cc1b-462d-b666-0fdc4c90ff90</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">3a8b1d46-bf2a-4e09-95f1-8b42298c9f7e</identifier>
+      </ID>
+      <name>OG_MATCH_STATUS</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_STATUS_ID</name>
+          <identifier class="java.lang.String">c1a1a674-a3ef-4a61-8f61-a715672d7e43</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_MATCH</name>
+            <identifier class="java.lang.String">6a2bf6a9-209b-49f0-ae24-35ff6959253f</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_STATUS_PK</name>
+        <identifier class="java.lang.String">d0cf5460-6f2d-4d05-b83b-0093a38b8fb2</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_STATUS</name>
+          <identifier class="java.lang.String">bc636cb4-b577-424e-901b-7fec9f71c5ab</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">b2188f5a-a72f-4f7f-b94c-2e83946bb675</identifier>
+      </ID>
+      <name>OG_MATCH_TEAM1</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_TEAM_ID</name>
+          <identifier class="java.lang.String">0d937362-97d1-4a60-9745-dece6217a09a</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_MATCH</name>
+            <identifier class="java.lang.String">6a2bf6a9-209b-49f0-ae24-35ff6959253f</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_TEAM_PK</name>
+        <identifier class="java.lang.String">5618e2d7-11e3-41a8-bd82-2417cf10f7fd</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_TEAM</name>
+          <identifier class="java.lang.String">3cac4902-ad24-4131-ab20-b30830d7655b</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">44660c29-6197-42df-bc00-bd5eb425fdbe</identifier>
+      </ID>
+      <name>OG_MATCH_TEAM2</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_TEAM_ID1</name>
+          <identifier class="java.lang.String">2f885a93-2572-4841-8143-c0515c4baa59</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_MATCH</name>
+            <identifier class="java.lang.String">6a2bf6a9-209b-49f0-ae24-35ff6959253f</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_TEAM_PK</name>
+        <identifier class="java.lang.String">5618e2d7-11e3-41a8-bd82-2417cf10f7fd</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_TEAM</name>
+          <identifier class="java.lang.String">3cac4902-ad24-4131-ab20-b30830d7655b</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">d7d28d10-3ce4-4a53-9561-422f78fa5e1e</identifier>
+      </ID>
+      <name>OG_MATCH_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_MATCH_ID</name>
+          <identifier class="java.lang.String">74d4ca7c-314a-42d8-a3c3-60605937806b</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_MATCH</name>
+            <identifier class="java.lang.String">6a2bf6a9-209b-49f0-ae24-35ff6959253f</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_MATCH_PK</name>
+        <identifier class="java.lang.String">eb5c59db-1d76-4433-bf3a-74a7acdecbee</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_MATCH</name>
+          <identifier class="java.lang.String">6a2bf6a9-209b-49f0-ae24-35ff6959253f</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+    <constraint class="oracle.javatools.db.UniqueConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">19959495-d4de-4034-b280-feed7a23c7ef</identifier>
+      </ID>
+      <name>OG_MATCH_UK_MEDAL</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_MEDAL_ID</name>
+          <identifier class="java.lang.String">9d5671be-f590-4b8f-b51c-50db48972c38</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_MATCH</name>
+            <identifier class="java.lang.String">6a2bf6a9-209b-49f0-ae24-35ff6959253f</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_MATCH_UK_MEDAL</name>
+        <identifier class="java.lang.String">210e0602-0abf-4b9f-9da8-7c800c022cea</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_MATCH</name>
+          <identifier class="java.lang.String">6a2bf6a9-209b-49f0-ae24-35ff6959253f</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">eb5c59db-1d76-4433-bf3a-74a7acdecbee</identifier>
+      </ID>
+      <name>OG_MATCH_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">31c57d3a-a238-4566-a58f-0d2593957f6e</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">4bafd1ec-8faa-4267-9b53-14e10b374dc3</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_MATCH_ID</name>
+              <identifier class="java.lang.String">74d4ca7c-314a-42d8-a3c3-60605937806b</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_MATCH</name>
+                <identifier class="java.lang.String">6a2bf6a9-209b-49f0-ae24-35ff6959253f</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">210e0602-0abf-4b9f-9da8-7c800c022cea</identifier>
+      </ID>
+      <name>OG_MATCH_UK_MEDAL</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">55e449d0-4691-437d-8c50-d82f42cbf9fd</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">08c1923a-7d48-47a5-bc85-239e68e2a3e8</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_MEDAL_ID</name>
+              <identifier class="java.lang.String">9d5671be-f590-4b8f-b51c-50db48972c38</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_MATCH</name>
+                <identifier class="java.lang.String">6a2bf6a9-209b-49f0-ae24-35ff6959253f</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table OG_MATCH created from UML class &quot;OgMatch&quot;
+Primary key constraint OG_MATCH_PK created by default
+Foreign key constraint OG_MATCH_MEDAL created for UML association &quot;OgMatchMedal&quot;
+Foreign key constraint OG_MATCH_PHASE created for UML association &quot;OgMatchPhase&quot;
+Foreign key constraint OG_MATCH_REFEREE created for UML association &quot;OgMatchReferee&quot;
+Foreign key constraint OG_MATCH_STADIUM created for UML association &quot;OgMatchStadium&quot;
+Foreign key constraint OG_MATCH_STATUS created for UML association &quot;OgMatchStatus&quot;
+Foreign key constraint OG_MATCH_TEAM1 created for UML association &quot;OgMatchTeam1&quot;
+Foreign key constraint OG_MATCH_TEAM2 created for UML association &quot;OgMatchTeam2&quot;</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SYSMAN</name>
+  </schema>
+</table>

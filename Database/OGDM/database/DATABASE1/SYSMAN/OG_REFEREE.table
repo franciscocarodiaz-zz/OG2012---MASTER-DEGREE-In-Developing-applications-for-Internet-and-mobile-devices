@@ -1,0 +1,453 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">98f2f795-ee2e-4525-9686-7e7446d07b0c</identifier>
+  </ID>
+  <name>OG_REFEREE</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">c35e891f-7e0b-43b0-890c-df3e53b8ac2c</identifier>
+      </ID>
+      <name>OG_REFEREE_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">95cd0d97-b305-4fbf-9528-e5d3bde473ef</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_REFEREE_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">3d17f7c6-5e81-4f5a-8124-1dab97c8911e</identifier>
+      </ID>
+      <name>NAME</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">0a6a3f91-4a36-40f6-9d82-dfaf4454a5c4</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column NAME created from UML attribute &quot;name&quot; in UML class &quot;OgPerson&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">2f058128-18de-4ff2-9219-c08ffdeeab43</identifier>
+      </ID>
+      <name>SURNAME</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">adae0689-95a1-44e4-8dcc-7aca1eafc6d9</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column SURNAME created from UML attribute &quot;surname&quot; in UML class &quot;OgPerson&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e97a6402-2166-4cd4-b859-7c7e319a9f9c</identifier>
+      </ID>
+      <name>BIRTHDATE</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">0c4886b3-9d6b-46c9-9fda-07c0dcc29895</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column BIRTHDATE created from UML attribute &quot;birthdate&quot; in UML class &quot;OgPerson&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">edebd004-e0c1-4f7d-a19d-a30b214ab06e</identifier>
+      </ID>
+      <name>OG_GENDER_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">8918df8f-b2aa-48f5-9259-dd9b0913e937</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_GENDER_ID created as default foreign key column for foreign key &quot;OG_PERSON_GENDER&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">83173991-784d-488a-9c03-417bc73fb66e</identifier>
+      </ID>
+      <name>OG_NATIONALITY_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">71336f24-9ac4-4e33-ad68-bd1fbbd6baa9</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_NATIONALITY_ID created as default foreign key column for foreign key &quot;OG_PERSON_NATIONALITY&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">b19d268e-2641-4e3c-8fd7-e334c8a361f0</identifier>
+      </ID>
+      <name>OG_NOC_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">49700b33-0988-44ef-97ea-bb7477eae434</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_NOC_ID created as default foreign key column for foreign key &quot;OG_PERSON_NOC&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">813c16ae-84a8-4091-b275-2d9d690753d5</identifier>
+      </ID>
+      <name>OG_CATEGORY_REFEREE_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">532a46bb-f113-4c69-a8c0-eb8e729294e1</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_CATEGORY_REFEREE_ID created as default foreign key column for foreign key &quot;OG_REFEREE_CATEGORY_REFEREE&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">0a1bc21a-0169-457d-a787-098a8974540d</identifier>
+      </ID>
+      <name>OG_PERSON_REF_GENDER</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_GENDER_ID</name>
+          <identifier class="java.lang.String">edebd004-e0c1-4f7d-a19d-a30b214ab06e</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_REFEREE</name>
+            <identifier class="java.lang.String">98f2f795-ee2e-4525-9686-7e7446d07b0c</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_GENDER_PK</name>
+        <identifier class="java.lang.String">106a2781-9294-407b-a9fe-06dffd2d79eb</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_GENDER</name>
+          <identifier class="java.lang.String">3f31529a-ac8b-44b8-973d-941e8372f858</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">1838c826-6671-4f9c-8963-99a4531b6918</identifier>
+      </ID>
+      <name>OG_PERSON_REF_NATIONALITY</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NATIONALITY_ID</name>
+          <identifier class="java.lang.String">83173991-784d-488a-9c03-417bc73fb66e</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_REFEREE</name>
+            <identifier class="java.lang.String">98f2f795-ee2e-4525-9686-7e7446d07b0c</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_NATIONALITY_PK</name>
+        <identifier class="java.lang.String">710bd89b-a890-4b13-b3c8-c63988bd216b</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NATIONALITY</name>
+          <identifier class="java.lang.String">cba66f59-ffb4-4ab8-9d99-14b134c412a0</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">91c35624-590e-469a-aff1-9842f9d37d6e</identifier>
+      </ID>
+      <name>OG_PERSON_REF_NOC</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NOC_ID</name>
+          <identifier class="java.lang.String">b19d268e-2641-4e3c-8fd7-e334c8a361f0</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_REFEREE</name>
+            <identifier class="java.lang.String">98f2f795-ee2e-4525-9686-7e7446d07b0c</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_NOC_PK</name>
+        <identifier class="java.lang.String">b5443e21-71a5-4c97-99fa-2c69961111a4</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NOC</name>
+          <identifier class="java.lang.String">38ee1e7e-d461-45fd-8779-0bcf42310dcc</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">448f5f72-63ac-4242-b795-9623207b47d5</identifier>
+      </ID>
+      <name>OG_REFEREE_CATEGORY_REFEREE</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_CATEGORY_REFEREE_ID</name>
+          <identifier class="java.lang.String">813c16ae-84a8-4091-b275-2d9d690753d5</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_REFEREE</name>
+            <identifier class="java.lang.String">98f2f795-ee2e-4525-9686-7e7446d07b0c</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_CATEGORY_REFEREE_PK</name>
+        <identifier class="java.lang.String">37a14eb3-ef11-4dda-aeb9-ced85a2780cd</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_CATEGORY_REFEREE</name>
+          <identifier class="java.lang.String">b829b24f-6c42-4e25-b1c9-ebf7c2327c4b</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">66661588-d56a-47d1-aeb7-be47fff8826f</identifier>
+      </ID>
+      <name>OG_REFEREE_PERSON</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_REFEREE_ID</name>
+          <identifier class="java.lang.String">c35e891f-7e0b-43b0-890c-df3e53b8ac2c</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_REFEREE</name>
+            <identifier class="java.lang.String">98f2f795-ee2e-4525-9686-7e7446d07b0c</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>2</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_PERSON_PK</name>
+        <identifier class="java.lang.String">996f3a57-61a3-43c4-97c2-7c4576cdcd61</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_PERSON</name>
+          <identifier class="java.lang.String">6d62035f-05d4-4d6a-8e51-1719373642c7</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">00c0345a-0726-467f-9aee-d9d95b201f81</identifier>
+      </ID>
+      <name>OG_REFEREE_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_REFEREE_ID</name>
+          <identifier class="java.lang.String">c35e891f-7e0b-43b0-890c-df3e53b8ac2c</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_REFEREE</name>
+            <identifier class="java.lang.String">98f2f795-ee2e-4525-9686-7e7446d07b0c</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_REFEREE_PK</name>
+        <identifier class="java.lang.String">e23e270a-eb26-4d7b-8f83-2d19441b56dc</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_REFEREE</name>
+          <identifier class="java.lang.String">98f2f795-ee2e-4525-9686-7e7446d07b0c</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e23e270a-eb26-4d7b-8f83-2d19441b56dc</identifier>
+      </ID>
+      <name>OG_REFEREE_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">fb08b9c7-0fd2-48da-9c7c-b9b72d05f989</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">9896184e-dc89-4c83-bb1b-5a74a5b7e00a</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_REFEREE_ID</name>
+              <identifier class="java.lang.String">c35e891f-7e0b-43b0-890c-df3e53b8ac2c</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_REFEREE</name>
+                <identifier class="java.lang.String">98f2f795-ee2e-4525-9686-7e7446d07b0c</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table OG_REFEREE created from UML class &quot;OgReferee&quot;
+Primary key constraint OG_REFEREE_PK created by default
+Foreign key constraint OG_PERSON_GENDER created for UML association &quot;OgPersonGender&quot;
+Foreign key constraint OG_PERSON_NATIONALITY created for UML association &quot;OgPersonNationality&quot;
+Foreign key constraint OG_PERSON_NOC created for UML association &quot;OgPersonNoc&quot;
+Foreign key constraint OG_REFEREE_CATEGORY_REFEREE created for UML association &quot;OgRefereeCategoryReferee&quot;</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SYSMAN</name>
+  </schema>
+</table>

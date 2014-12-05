@@ -1,0 +1,370 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">6d62035f-05d4-4d6a-8e51-1719373642c7</identifier>
+  </ID>
+  <name>OG_PERSON</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">41cbe25a-61d3-4bfb-8947-a9c70c2b278d</identifier>
+      </ID>
+      <name>OG_PERSON_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">f36890a1-4ce1-4c12-9fac-321f4fa4595a</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_PERSON_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">6b32fda3-cabb-4f6e-9733-864511a23345</identifier>
+      </ID>
+      <name>NAME</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">b3451a9a-b6b1-4331-a9d2-297bad451f34</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column NAME created from UML attribute &quot;name&quot; in UML class &quot;OgPerson&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">afc25adf-e73c-4e28-a77c-24baaa444c8b</identifier>
+      </ID>
+      <name>SURNAME</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">5c25a6ac-7487-4a85-907b-dd8a64ad1b71</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column SURNAME created from UML attribute &quot;surname&quot; in UML class &quot;OgPerson&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">153b3ebb-25c8-4a7f-ad32-fa279efb1702</identifier>
+      </ID>
+      <name>BIRTHDATE</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">1dcec21f-adb3-42fa-92d1-07d9a243194f</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column BIRTHDATE created from UML attribute &quot;birthdate&quot; in UML class &quot;OgPerson&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">84019349-152b-4a54-a4fa-d46d59ddb896</identifier>
+      </ID>
+      <name>OG_GENDER_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">8918df8f-b2aa-48f5-9259-dd9b0913e937</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_GENDER_ID created as default foreign key column for foreign key &quot;OG_PERSON_GENDER&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">2b07c061-c6cb-4ef2-843b-bf3790fc8eea</identifier>
+      </ID>
+      <name>OG_NATIONALITY_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">71336f24-9ac4-4e33-ad68-bd1fbbd6baa9</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_NATIONALITY_ID created as default foreign key column for foreign key &quot;OG_PERSON_NATIONALITY&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">93bc30a9-a05a-4314-90bb-eb391b191424</identifier>
+      </ID>
+      <name>OG_NOC_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">49700b33-0988-44ef-97ea-bb7477eae434</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_NOC_ID created as default foreign key column for foreign key &quot;OG_PERSON_NOC&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">987518cf-d5ef-4ee5-9fc6-80d987d65b7e</identifier>
+      </ID>
+      <name>OG_PERSON_GENDER</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_GENDER_ID</name>
+          <identifier class="java.lang.String">84019349-152b-4a54-a4fa-d46d59ddb896</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_PERSON</name>
+            <identifier class="java.lang.String">6d62035f-05d4-4d6a-8e51-1719373642c7</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SYSMAN</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_GENDER_PK</name>
+        <identifier class="java.lang.String">106a2781-9294-407b-a9fe-06dffd2d79eb</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_GENDER</name>
+          <identifier class="java.lang.String">3f31529a-ac8b-44b8-973d-941e8372f858</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">33de22dd-2e8d-4596-87fb-bdd59e1495ac</identifier>
+      </ID>
+      <name>OG_PERSON_NATIONALITY</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NATIONALITY_ID</name>
+          <identifier class="java.lang.String">2b07c061-c6cb-4ef2-843b-bf3790fc8eea</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_PERSON</name>
+            <identifier class="java.lang.String">6d62035f-05d4-4d6a-8e51-1719373642c7</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SYSMAN</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_NATIONALITY_PK</name>
+        <identifier class="java.lang.String">710bd89b-a890-4b13-b3c8-c63988bd216b</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NATIONALITY</name>
+          <identifier class="java.lang.String">cba66f59-ffb4-4ab8-9d99-14b134c412a0</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">c81f393b-fa6a-47f5-afaf-a7553f493dc6</identifier>
+      </ID>
+      <name>OG_PERSON_NOC</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NOC_ID</name>
+          <identifier class="java.lang.String">93bc30a9-a05a-4314-90bb-eb391b191424</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_PERSON</name>
+            <identifier class="java.lang.String">6d62035f-05d4-4d6a-8e51-1719373642c7</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SYSMAN</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_NOC_PK</name>
+        <identifier class="java.lang.String">b5443e21-71a5-4c97-99fa-2c69961111a4</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NOC</name>
+          <identifier class="java.lang.String">38ee1e7e-d461-45fd-8779-0bcf42310dcc</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">996f3a57-61a3-43c4-97c2-7c4576cdcd61</identifier>
+      </ID>
+      <name>OG_PERSON_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_PERSON_ID</name>
+          <identifier class="java.lang.String">41cbe25a-61d3-4bfb-8947-a9c70c2b278d</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_PERSON</name>
+            <identifier class="java.lang.String">6d62035f-05d4-4d6a-8e51-1719373642c7</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SYSMAN</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_PERSON_PK</name>
+        <identifier class="java.lang.String">5aa7d9a4-b7e5-49d7-8c46-3d5d6c211f6d</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_PERSON</name>
+          <identifier class="java.lang.String">6d62035f-05d4-4d6a-8e51-1719373642c7</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">5aa7d9a4-b7e5-49d7-8c46-3d5d6c211f6d</identifier>
+      </ID>
+      <name>OG_PERSON_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">c15d1710-4e60-45dd-866c-9bdd8e8ef485</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">bd76fc55-161e-4234-bb6b-8a1bca9cc36a</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_PERSON_ID</name>
+              <identifier class="java.lang.String">41cbe25a-61d3-4bfb-8947-a9c70c2b278d</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_PERSON</name>
+                <identifier class="java.lang.String">6d62035f-05d4-4d6a-8e51-1719373642c7</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>SYSMAN</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table OG_PERSON created from UML class &quot;OgPerson&quot;
+Primary key constraint OG_PERSON_PK created by default
+Foreign key constraint OG_PERSON_GENDER created for UML association &quot;OgPersonGender&quot;
+Foreign key constraint OG_PERSON_NATIONALITY created for UML association &quot;OgPersonNationality&quot;
+Foreign key constraint OG_PERSON_NOC created for UML association &quot;OgPersonNoc&quot;</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SYSMAN</name>
+  </schema>
+</table>

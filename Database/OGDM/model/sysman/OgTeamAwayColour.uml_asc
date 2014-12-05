@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.1.0'/>
+ <uml:Association xmi:uuid='urn:uuid:3e57bcd1-5ddb-4a65-a9cc-a3c92ac8a3d9'
+   isAbstract='false'
+   isDerived='false'
+   isLeaf='false'
+   name='OgTeamAwayColour'
+   visibility='public'>
+  <memberEnd href='urn:uuid:1caf5721-f1eb-4ec8-bf19-b07076a4e2a5'/>
+  <memberEnd href='urn:uuid:f13f4896-25c4-42ba-a202-b4cf5c998b84'/>
+  <ownedEnd xmi:uuid='urn:uuid:1caf5721-f1eb-4ec8-bf19-b07076a4e2a5'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    aggregation='shared'>
+   <association href='urn:uuid:3e57bcd1-5ddb-4a65-a9cc-a3c92ac8a3d9'/>
+   <type href='urn:uuid:cc3d22ff-ff88-450f-8a71-e64ee34d5c41'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:b04b551e-92c1-4c42-a579-898f6a654224'
+     value='0'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:0721a517-4c71-404f-b97b-2f42d7db77d7'
+     value='*'
+     visibility='public'/>
+  </ownedEnd>
+  <ownedEnd xmi:uuid='urn:uuid:f13f4896-25c4-42ba-a202-b4cf5c998b84'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    aggregation='none'>
+   <association href='urn:uuid:3e57bcd1-5ddb-4a65-a9cc-a3c92ac8a3d9'/>
+   <type href='urn:uuid:b00b5f75-bb47-40cd-bb89-d0cdbdbb360f'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:bbf3ac51-9fac-4f6f-9a63-6e979a6e6ee2'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:7f7294e7-0cb7-4a59-9d7c-3eb0b3343c04'
+     value='1'
+     visibility='public'/>
+  </ownedEnd>
+ </uml:Association>
+</xmi:XMI>

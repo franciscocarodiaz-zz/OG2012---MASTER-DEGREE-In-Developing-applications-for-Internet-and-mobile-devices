@@ -1,0 +1,235 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">3d46c74d-7cb7-4a34-924d-57f9043d4690</identifier>
+  </ID>
+  <name>OG_NEW_NOC</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">edb7ae69-7f36-4d8b-8c9f-5567aee4886f</identifier>
+      </ID>
+      <name>OG_NEW_NOC_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">5f9032af-5192-47b4-8156-421b7dea7431</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_NEW_NOC_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">2b7fd11a-41ef-462f-99a4-362f99b80c7f</identifier>
+      </ID>
+      <name>OG_NEW_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">6acd9b03-807a-4400-82c0-8e749d506140</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_NEW_ID created as default foreign key column for foreign key &quot;OG_NEW_NOC_NEW&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">c9542e60-2ca3-4832-9700-5492b3665492</identifier>
+      </ID>
+      <name>OG_NOC_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">49700b33-0988-44ef-97ea-bb7477eae434</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_NOC_ID created as default foreign key column for foreign key &quot;OG_NEW_NOC_NOC&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">8175fc6d-e5f3-4498-96c9-9cec5fd75abb</identifier>
+      </ID>
+      <name>OG_NEW_NOC_NEW</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NEW_ID</name>
+          <identifier class="java.lang.String">2b7fd11a-41ef-462f-99a4-362f99b80c7f</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_NEW_NOC</name>
+            <identifier class="java.lang.String">3d46c74d-7cb7-4a34-924d-57f9043d4690</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SYSMAN</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_NEW_PK</name>
+        <identifier class="java.lang.String">dc8cd8fe-2fbe-4d8d-9df1-4341f624ae78</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NEW</name>
+          <identifier class="java.lang.String">ab8cfd41-340c-4594-95f8-171e4f2e5e95</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">8fb5f435-1a56-4a68-b706-3c7a6baddd18</identifier>
+      </ID>
+      <name>OG_NEW_NOC_NOC</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NOC_ID</name>
+          <identifier class="java.lang.String">c9542e60-2ca3-4832-9700-5492b3665492</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_NEW_NOC</name>
+            <identifier class="java.lang.String">3d46c74d-7cb7-4a34-924d-57f9043d4690</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SYSMAN</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_NOC_PK</name>
+        <identifier class="java.lang.String">b5443e21-71a5-4c97-99fa-2c69961111a4</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NOC</name>
+          <identifier class="java.lang.String">38ee1e7e-d461-45fd-8779-0bcf42310dcc</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">5002dd9a-4f7b-447a-99d4-75c5b65f1b5d</identifier>
+      </ID>
+      <name>OG_NEW_NOC_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NEW_NOC_ID</name>
+          <identifier class="java.lang.String">edb7ae69-7f36-4d8b-8c9f-5567aee4886f</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_NEW_NOC</name>
+            <identifier class="java.lang.String">3d46c74d-7cb7-4a34-924d-57f9043d4690</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SYSMAN</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_NEW_NOC_PK</name>
+        <identifier class="java.lang.String">191ff80d-e478-4e78-8d5d-67d8ea5a7cd1</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_NEW_NOC</name>
+          <identifier class="java.lang.String">3d46c74d-7cb7-4a34-924d-57f9043d4690</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">191ff80d-e478-4e78-8d5d-67d8ea5a7cd1</identifier>
+      </ID>
+      <name>OG_NEW_NOC_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">78d5ea00-d865-4a96-a446-ad5d163396f3</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">99620bcd-5f18-4d03-9373-d82599a85de9</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_NEW_NOC_ID</name>
+              <identifier class="java.lang.String">edb7ae69-7f36-4d8b-8c9f-5567aee4886f</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_NEW_NOC</name>
+                <identifier class="java.lang.String">3d46c74d-7cb7-4a34-924d-57f9043d4690</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>SYSMAN</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table OG_NEW_NOC created from UML class &quot;OgNewNoc&quot;
+Primary key constraint OG_NEW_NOC_PK created by default
+Foreign key constraint OG_NEW_NOC_NEW created for UML association &quot;OgNewNocNew&quot;
+Foreign key constraint OG_NEW_NOC_NOC created for UML association &quot;OgNewNocNoc&quot;</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SYSMAN</name>
+  </schema>
+</table>

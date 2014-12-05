@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">b829b24f-6c42-4e25-b1c9-ebf7c2327c4b</identifier>
+  </ID>
+  <name>OG_CATEGORY_REFEREE</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">ee61165a-d9c2-4ad5-8a5d-9d91ce5c604f</identifier>
+      </ID>
+      <name>OG_CATEGORY_REFEREE_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">532a46bb-f113-4c69-a8c0-eb8e729294e1</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_CATEGORY_REFEREE_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">2c64f1b8-dd50-453c-8209-66a5789ce5b5</identifier>
+      </ID>
+      <name>CATEGORY_REFEREE</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">07ab6693-6e15-499a-915a-8f660d2dbeaf</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column CATEGORY_REFEREE created from UML attribute &quot;categoryReferee&quot; in UML class &quot;OgCategoryReferee&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">37a14eb3-ef11-4dda-aeb9-ced85a2780cd</identifier>
+      </ID>
+      <name>OG_CATEGORY_REFEREE_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_CATEGORY_REFEREE_ID</name>
+          <identifier class="java.lang.String">ee61165a-d9c2-4ad5-8a5d-9d91ce5c604f</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_CATEGORY_REFEREE</name>
+            <identifier class="java.lang.String">b829b24f-6c42-4e25-b1c9-ebf7c2327c4b</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SYSMAN</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_CATEGORY_REFEREE_PK</name>
+        <identifier class="java.lang.String">d0af7fc7-f9ee-4859-b036-0573974ca931</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_CATEGORY_REFEREE</name>
+          <identifier class="java.lang.String">b829b24f-6c42-4e25-b1c9-ebf7c2327c4b</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">d0af7fc7-f9ee-4859-b036-0573974ca931</identifier>
+      </ID>
+      <name>OG_CATEGORY_REFEREE_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">72a51200-cdfc-413f-9784-eecd4cf1be1a</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">91dcc394-f56e-4a92-8042-a236d7c87a19</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_CATEGORY_REFEREE_ID</name>
+              <identifier class="java.lang.String">ee61165a-d9c2-4ad5-8a5d-9d91ce5c604f</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_CATEGORY_REFEREE</name>
+                <identifier class="java.lang.String">b829b24f-6c42-4e25-b1c9-ebf7c2327c4b</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>SYSMAN</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table OG_CATEGORY_REFEREE created from UML class &quot;OgCategoryReferee&quot;
+Primary key constraint OG_CATEGORY_REFEREE_PK created by default</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SYSMAN</name>
+  </schema>
+</table>

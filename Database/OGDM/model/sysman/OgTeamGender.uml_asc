@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.1.0'/>
+ <uml:Association xmi:uuid='urn:uuid:d4bd70b2-e322-4180-aa40-81434a414d2f'
+   isAbstract='false'
+   isDerived='false'
+   isLeaf='false'
+   name='OgTeamGender'
+   visibility='public'>
+  <memberEnd href='urn:uuid:d30471d9-0779-4504-a4d8-194d28e44259'/>
+  <memberEnd href='urn:uuid:bdaf282c-dfd9-40fe-98d6-77a1b4247061'/>
+  <ownedEnd xmi:uuid='urn:uuid:d30471d9-0779-4504-a4d8-194d28e44259'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    aggregation='none'>
+   <association href='urn:uuid:d4bd70b2-e322-4180-aa40-81434a414d2f'/>
+   <type href='urn:uuid:cc3d22ff-ff88-450f-8a71-e64ee34d5c41'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:768eb32a-db28-4adf-8ca1-cc3d46ed6492'
+     value='0'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:e25c6c77-3a03-4c66-9d00-4c5e9eba235f'
+     value='*'
+     visibility='public'/>
+  </ownedEnd>
+  <ownedEnd xmi:uuid='urn:uuid:bdaf282c-dfd9-40fe-98d6-77a1b4247061'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    aggregation='none'>
+   <association href='urn:uuid:d4bd70b2-e322-4180-aa40-81434a414d2f'/>
+   <type href='urn:uuid:938153f3-ddb1-4440-b2c1-3042e0a9acce'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:5e78172c-997f-4cc2-9163-94e3d2e2a899'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:4a45d84c-6ced-4d0c-9ada-6a1b7514010c'
+     value='1'
+     visibility='public'/>
+  </ownedEnd>
+ </uml:Association>
+</xmi:XMI>

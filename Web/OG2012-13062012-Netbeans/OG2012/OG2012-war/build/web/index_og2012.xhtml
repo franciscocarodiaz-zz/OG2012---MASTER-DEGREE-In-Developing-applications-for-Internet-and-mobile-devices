@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:body>
+        <ui:composition template="/WEB-INF/templates/mainTemplate.xhtml">
+            <ui:define name="title">menu 1</ui:define>
+            <ui:define name="top">
+                <ui:include src="/WEB-INF/facelets/top.xhtml"/>
+            </ui:define>
+            <ui:define name="left">
+                <ui:include src="/WEB-INF/facelets/left.xhtml"/>
+            </ui:define>
+            <ui:define name="content">
+                <ui:include src="/WEB-INF/facelets/content.xhtml"/>
+            </ui:define>
+            <ui:define name="right">
+                <ui:include src="/WEB-INF/facelets/right.xhtml"/>
+            </ui:define>
+            <ui:define name="bottom">
+                <ui:include src="/WEB-INF/facelets/bottom.xhtml"/>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+

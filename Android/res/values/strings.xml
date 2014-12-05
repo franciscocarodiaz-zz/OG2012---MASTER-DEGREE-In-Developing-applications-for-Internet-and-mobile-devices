@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <string name="app_name">OG2012</string>
+    
+    <string name="user">User:</string>
+    <string name="pass">Password:</string>
+    
+    <string name="enter">Enter</string>
+	<string name="exit">Exit</string>
+	
+	<string name="selectSport">Select a sport to follow:</string>
+	
+	
+	<string name="indexSoccerGeneralInfo">General Information</string>
+	<string name="indexSoccerMatches">Current Matches</string>
+	<string name="indexSoccerTeams">Teams</string>
+	<string name="indexSoccerNews">News</string>
+	<string name="indexSoccerAboutUs">About us</string>
+
+</resources>

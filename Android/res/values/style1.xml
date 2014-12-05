@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="CodeFontGeneral">
+        <item name="android:textColor">#0055AA</item>
+        <item name="android:typeface">serif</item>
+    </style>
+    
+    <style name="CodeFontH1">
+        <item name="android:textColor">#EE7621</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="CodeFontButton" parent="@android:style/TextAppearance">
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    
+    
+    
+    <dimen name="sizeButtonGeneral">
+        100dp
+    </dimen>
+    
+    
+    
+    <color name="colorNo">
+        #FF0000
+    </color>
+    
+    <color name="colorYes">
+        #00FF00
+    </color>
+    
+</resources>

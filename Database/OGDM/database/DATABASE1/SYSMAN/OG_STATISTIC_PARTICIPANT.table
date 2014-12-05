@@ -1,0 +1,441 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">1208e1f3-9817-4800-9357-6d468330b39f</identifier>
+  </ID>
+  <name>OG_STATISTIC_PARTICIPANT</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">882c93d3-7428-4b16-ac64-7fe9e342d818</identifier>
+      </ID>
+      <name>OG_STATISTIC_PARTICIPANT_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">b7cd39d5-f0a5-4b54-a2ef-6d690b8757a7</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_STATISTIC_PARTICIPANT_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">a0d8d44c-d277-4049-83d7-b6960132aab5</identifier>
+      </ID>
+      <name>PJ</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">7bf683c1-1b69-48ef-b503-7dc39128356c</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column PJ created from UML attribute &quot;pj&quot; in UML class &quot;OgStatisticParticipant&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">cb4d4f81-acd5-487b-b846-c9feaa70434b</identifier>
+      </ID>
+      <name>TIT</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">250c71b3-2a76-4598-a041-6450c0bc9eb7</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column TIT created from UML attribute &quot;tit&quot; in UML class &quot;OgStatisticParticipant&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">47f04398-688c-40e7-9940-06f7807d8da5</identifier>
+      </ID>
+      <name>MJUG</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">9dec6232-1eab-4ba4-bd3b-d3a6bc4f0924</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column MJUG created from UML attribute &quot;mjug&quot; in UML class &quot;OgStatisticParticipant&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">6c622836-e013-4e50-aad9-cad845b96726</identifier>
+      </ID>
+      <name>G</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">b46bf16d-c2a1-483c-88eb-7efb910bafe8</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column G created from UML attribute &quot; G&quot; in UML class &quot;OgStatisticParticipant&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">50f835a8-7a0c-42dd-bbc2-eb6d9c13881f</identifier>
+      </ID>
+      <name>ASIST</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">7f50f9f1-3c3e-46d9-b5d6-cde886a6e100</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column ASIST created from UML attribute &quot;asist&quot; in UML class &quot;OgStatisticParticipant&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">cdea37f7-1d39-4519-a8a6-9e1a9b6e99bb</identifier>
+      </ID>
+      <name>FC</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">e18c30af-64f7-4d03-ac97-a45c702cb922</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column FC created from UML attribute &quot;fc&quot; in UML class &quot;OgStatisticParticipant&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">3d9fa0dc-4081-49c6-84ee-95e1bfb8bfc0</identifier>
+      </ID>
+      <name>FS</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">c8c05326-d965-4d36-a7b9-51adfd8d929b</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column FS created from UML attribute &quot;fs&quot; in UML class &quot;OgStatisticParticipant&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">d402aece-a742-4fd9-9ad0-d8fc80a47fb3</identifier>
+      </ID>
+      <name>OG_PARTICIPANT_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">175315fd-55bd-4fea-81d1-90313fb6f643</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_PARTICIPANT_ID created as default foreign key column for foreign key &quot;OG_STATISTIC_PARTIC_PARTIC&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">7c51d447-a7af-49d3-a32f-ecbfa0f3eed9</identifier>
+      </ID>
+      <name>OG_STATISTIC_PARTIC_PARTIC</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_PARTICIPANT_ID</name>
+          <identifier class="java.lang.String">d402aece-a742-4fd9-9ad0-d8fc80a47fb3</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_STATISTIC_PARTICIPANT</name>
+            <identifier class="java.lang.String">1208e1f3-9817-4800-9357-6d468330b39f</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_PARTICIPANT_PK</name>
+        <identifier class="java.lang.String">8ac8aa77-12a0-4b54-8652-16b7a34c74ba</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_PARTICIPANT</name>
+          <identifier class="java.lang.String">e2bea773-e883-4df5-bd58-e24a09b7ca6e</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">8ff4a7aa-5eae-4b34-b4a9-3dc39f31fb3e</identifier>
+      </ID>
+      <name>OG_STATISTIC_PARTICIPANT_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_STATISTIC_PARTICIPANT_ID</name>
+          <identifier class="java.lang.String">882c93d3-7428-4b16-ac64-7fe9e342d818</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_STATISTIC_PARTICIPANT</name>
+            <identifier class="java.lang.String">1208e1f3-9817-4800-9357-6d468330b39f</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_STATISTIC_PARTICIPANT_PK</name>
+        <identifier class="java.lang.String">6177e7d5-d9f1-48f9-9038-a6e3d594343d</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_STATISTIC_PARTICIPANT</name>
+          <identifier class="java.lang.String">1208e1f3-9817-4800-9357-6d468330b39f</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+    <constraint class="oracle.javatools.db.UniqueConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">7c453583-76c5-4821-b781-d4f37e362df2</identifier>
+      </ID>
+      <name>OG_STATISTIC_PARTICIPANT_UK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_PARTICIPANT_ID</name>
+          <identifier class="java.lang.String">d402aece-a742-4fd9-9ad0-d8fc80a47fb3</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_STATISTIC_PARTICIPANT</name>
+            <identifier class="java.lang.String">1208e1f3-9817-4800-9357-6d468330b39f</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_STATISTIC_PARTICIPANT_UK</name>
+        <identifier class="java.lang.String">211d4d29-55c9-43fd-8a44-39e2b18e5b16</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_STATISTIC_PARTICIPANT</name>
+          <identifier class="java.lang.String">1208e1f3-9817-4800-9357-6d468330b39f</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">6177e7d5-d9f1-48f9-9038-a6e3d594343d</identifier>
+      </ID>
+      <name>OG_STATISTIC_PARTICIPANT_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">8b9b418b-995c-46f6-b43a-c34cebfafa7c</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">3f8afc5b-ca24-480e-bfde-5401d34f5697</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_STATISTIC_PARTICIPANT_ID</name>
+              <identifier class="java.lang.String">882c93d3-7428-4b16-ac64-7fe9e342d818</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_STATISTIC_PARTICIPANT</name>
+                <identifier class="java.lang.String">1208e1f3-9817-4800-9357-6d468330b39f</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">211d4d29-55c9-43fd-8a44-39e2b18e5b16</identifier>
+      </ID>
+      <name>OG_STATISTIC_PARTICIPANT_UK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">9a87d848-bd81-4b54-af30-3e5361383c90</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">368cb161-4530-427c-a6eb-561762369027</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_PARTICIPANT_ID</name>
+              <identifier class="java.lang.String">d402aece-a742-4fd9-9ad0-d8fc80a47fb3</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_STATISTIC_PARTICIPANT</name>
+                <identifier class="java.lang.String">1208e1f3-9817-4800-9357-6d468330b39f</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table OG_STATISTIC_PARTICIPANT created from UML class &quot;OgStatisticParticipant&quot;
+Primary key constraint OG_STATISTIC_PARTICIPANT_PK created by default
+Foreign key constraint OG_STATISTIC_PARTIC_PARTIC created for UML association &quot;OgStatisticParticPartic&quot;</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SYSMAN</name>
+  </schema>
+</table>

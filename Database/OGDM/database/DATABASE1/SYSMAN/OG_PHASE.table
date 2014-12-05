@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">ec9835ca-e199-41f7-8e2d-4c5ad0c15554</identifier>
+  </ID>
+  <name>OG_PHASE</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">24651579-2ea2-4e8e-89e8-d76f7e07fd30</identifier>
+      </ID>
+      <name>OG_PHASE_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">a9dabf0d-9b57-4e6d-a6c8-24542e06f5fb</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column OG_PHASE_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">9ed3032c-0a10-4330-9c75-6d4aa8b665df</identifier>
+      </ID>
+      <name>PHASE</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">7d889c8e-57e5-4b86-b0f0-7e1a2971398d</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column PHASE created from UML attribute &quot;phase&quot; in UML class &quot;OgPhase&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">ebac6aef-1e22-4992-afe4-ec16e2762d90</identifier>
+      </ID>
+      <name>OG_PHASE_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_PHASE_ID</name>
+          <identifier class="java.lang.String">24651579-2ea2-4e8e-89e8-d76f7e07fd30</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>OG_PHASE</name>
+            <identifier class="java.lang.String">ec9835ca-e199-41f7-8e2d-4c5ad0c15554</identifier>
+            <schemaName>SYSMAN</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SYSMAN</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>OG_PHASE_PK</name>
+        <identifier class="java.lang.String">52a6ab7c-43e9-43cb-8793-4f2a7209f992</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>OG_PHASE</name>
+          <identifier class="java.lang.String">ec9835ca-e199-41f7-8e2d-4c5ad0c15554</identifier>
+          <schemaName>SYSMAN</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SYSMAN</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">52a6ab7c-43e9-43cb-8793-4f2a7209f992</identifier>
+      </ID>
+      <name>OG_PHASE_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">da4446c6-61dd-48d9-a98b-627aca9180d6</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">df11a358-d501-42d1-a05d-de07a2fd9b06</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>OG_PHASE_ID</name>
+              <identifier class="java.lang.String">24651579-2ea2-4e8e-89e8-d76f7e07fd30</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>OG_PHASE</name>
+                <identifier class="java.lang.String">ec9835ca-e199-41f7-8e2d-4c5ad0c15554</identifier>
+                <schemaName>SYSMAN</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>SYSMAN</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SYSMAN</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table OG_PHASE created from UML class &quot;OgPhase&quot;
+Primary key constraint OG_PHASE_PK created by default</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SYSMAN</name>
+  </schema>
+</table>
